@@ -1,0 +1,144 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  z-index: 1;
+
+}
+
+.left-section {
+  align-items: center;
+}
+
+.left-section i {
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
+.left-section img {
+  margin-top: -10px;
+  margin-left: 20px;
+}
+
+.i {
+  display: none;
+}
+
+.login-button {
+  border: none;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  margin-right: 10px;
+}
+
+.signup-button {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 20px;
+
+}
+
+.container1 {
+  background-image: url("../images/bgimg.webp");
+  background-size: cover;
+}
+
+.container1-1 {
+  padding: 300px 80px;
+}
+
+.container1-1 h1 {
+  font-size: 50px;
+  margin: 10;
+}
+
+.container1-2 {
+  display: flex;
+  gap: 5px;
+}
+
+.container1-2 input {
+  flex: 3;
+  height: 50px;
+  border: none;
+  padding-left: 40px;
+}
+
+.container1-2 button {
+  flex: 1;
+  height: 50px;
+  border: none;
+  white-space: nowrap;
+}
+
+.container1-2 button i {
+  margin: 5px 10px;
+}
+
+.find-food {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.container1-1 p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.container1-1 p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width:475px) {
+  .container1-1 {
+    padding: 200px 30px 100px 30px;
+  }
+
+  .container1-1 h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width:620px) {
+
+  .left-section img {
+    margin-left: 10px;
+  }
+
+  .login-button {
+    display: none;
+  }
+
+  .i {
+    display: inline-block;
+    margin-right: 3px;
+  }
+
+  .signup-button {
+    margin-right: 10px;
+  }
+
+  .container1-2 {
+    flex-direction: column;
+
+  }
+
+  .container1-2 input {
+    flex: 1;
+    height: 50px;
+  }
+}
